@@ -1,26 +1,294 @@
-<!DOCTYPE html>
-<html lang="it">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GiorgioLorini</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Giorgio Lorini</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Giorgio Lorini. Computer Engineer, Ski Instructor">
+  <link href="style.css?3" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300400,500,600,700,800,900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicon-32x32.png">
 </head>
 
 <body>
-    GiorgioLorini
+  <div class="externalContainer">
+    <div id="darkModeButton" title="Dark Mode">
+      <label id="switch" class="switch">
+        <input type="checkbox" unchecked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div id="topnav" class="topnav">
+      <h2 id="topbarName" class="name">Lorini Giorgio </h2>
+      <a id="hamburger" class="fa fa-bars"></a>
+    </div>
+
+    <section id="menu" class="sideBar">
+      <div class="sideContentContainer">
+        <img class="profileImage" src="resources/images/Profilo.jpg">
+        <div class="sideContent">
+          <h2 class="name">Lorini <br> Giorgio, <span id="age"></span> </h2>
+          <h3 class="subtitle">Computer Engineer,<br>Ski Instructor</h3>
+          <h4 id="about" class="sectionTitle">About Me</h4>
+          <p class="about paragraph">Passionate about technology, sports and nature.<br>
+            Always been naturally curious about the world around me and how it works.<br>
+            I love computer science because it makes it possible to easily get from idea to working product.<br>
+            Prone to team work and with a positive and patient attitude.</p>
+        </div>
+        <div class="socialButtons">
+          <a href="https://www.facebook.com/giorgio.lorini.35/" target="_blank" class="fa icons fa-facebook"></a>
+          <a href="https://github.com/giorgiolorini" target="_blank" class="fa icons fa-github"></a>
+          <a href="https://www.linkedin.com/in/lorini-giorgio/" target="_blank" class="fa icons fa-linkedin"></a>
+          <a href="https://www.instagram.com/giorgiolorini_/" target="_blank" class="fa icons fa-instagram"></a>
+          <a href="mailto:l.giorgio.99@gmail.com" target="_blank" class="fa icons fa-envelope"></a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="mainContent">
+
+
+      <nav id="sidenav" class="toc">
+        <ul>
+          <li>
+            <a class="sidebarElem" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="sidebarElem" href="#education">Education</a>
+          </li>
+          <li>
+            <a class="sidebarElem" href="#experience">Experience</a>
+            <ul>
+              <li><a class="sidebarElem" href="#sentric">@ Sentric</a></li>
+              <li><a class="sidebarElem" href="#speciale">@ Scuola Sci Speciale</a></li>
+              <li><a class="sidebarElem" href="#bes">@ Bilingual European School</a></li>
+              <li><a class="sidebarElem" href="#polimi">@ Politecnico di Milano</a></li>
+              <li><a class="sidebarElem" href="#freelance">@ Freelance</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="sidebarElem" href="#certifications">Certifications</a>
+          </li>
+          <li>
+            <a class="sidebarElem" href="#expertise">Expertise</a>
+          </li>
+          <li>
+            <a class="sidebarElem" href="#projects">Projects</a>
+            <ul>
+              <li><a class="sidebarElem" href="#santorini">Santorini</a></li>
+              <li><a class="sidebarElem" href="#negroni">Negroni</a></li>
+              <li><a class="sidebarElem" href="#alhon">Alhon</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="sidebarElem" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+        <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+            stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+        </svg>
+      </nav>
+
+
+
+      <section id="home" class="hero section">
+
+      </section>
+      <section id="education" class="education section">
+        <h4 class="sectionTitle">Education</h4>
+        <p class="education paragraph">
+        <h5>Bachelor in Computer Science and Engineering</h5>
+        <p>Politecnico di Milano (2017-2020)</p>
+        <h5>Master in Computer Science and Engineering<br>
+          Interactive Applications</h5>
+        <p>Politecnico di Milano (current)</p>
+        <h5>Alpine Ski Instructor Course</h5>
+        <p>Regione Lombardia (current)</p>
+        </p>
+      </section>
+      <section class="experience section">
+        <h4 id="experience" class="sectionTitle">Experience</h4>
+        <p class="expereience paragraph">
+
+        <div id="sentric" class="block animation-element test2 one highlight">
+          <h5>Front-end web developer</h5>
+          <h6>Sentric, Sept 2021 - Dec 2021</h6>
+          <h6 class="location">Remote</h6>
+          <p>Developing part of the front-end of the Sentric web platform using Editor X.<br>
+            What I've learnt: working in autonomy, javascript, Editor X platform, usability.
+          </p>
+        </div>
+
+        <div id="speciale" class="block animation-element test2 one highlight">
+          <h5>Ski Instructor</h5>
+          <h6>Scuola sci Speciale, Dec 2019 - to date</h6>
+          <h6 class="location">Sankt Moritz (Switzerland)</h6>
+          <p>Teaching the basic skiing technique to beginners of all ages, individually or in groups.<br>
+            Because of the international environment that characterizes Sankt Moritz, it’s not unusual to provide
+            lessons in English.
+          </p>
+        </div>
+
+        <div id="bes" class="block animation-element test2 one highlight">
+          <h5>Ski Assistant</h5>
+          <h6>Bilingual European School, Feb-Mar 2021</h6>
+          <h6 class="location">Milan (Italy)</h6>
+          <p>Collaboration in the "Ski in the City" project by BES, "taking the mountains to Milan" for skiing despite
+            the Covid-19 situation.<br>
+            Using a plastic-made artificial ski slope by Neveplast, we guided kids from kindergarden to secondary school
+            in the activity.
+          </p>
+        </div>
+
+        <div id="polimi" class="block animation-element test2 one highlight">
+          <h5>Lab Assistant</h5>
+          <h6>Politecnico di Milano, Sept 2020 - Jan 2021</h6>
+          <h6 class="location">Milan (Italy)</h6>
+          <p>Lab Assistant for the "Fondamenti di Informatica" (Fundamentals of Computer Science) course for computer
+            engineering students.<br>
+            The main task was to support the professor in tutoring the students attending the class.
+          </p>
+        </div>
+
+        <div id="freelance" class="block animation-element test2 one highlight">
+          <h5>Website Developer</h5>
+          <h6>Freelance, 2015 - to date</h6>
+          <h6 class="location"></h6>
+          <p>Designed and developed static single or multi-page websites, collaborating closely with my clients to best
+            capture their needs and desires and provide them with the optimal platform to present their businesses or
+            activities to the world.<br>
+            This website is an example of what I am able to do using just HTML, CSS and Javascript.
+          </p>
+        </div>
+        </p>
+      </section>
+      <section class="misc section">
+        <div id="certifications">
+          <h4 class="sectionTitle">Certifications</h4>
+          <p class="certifications paragraph">
+            First Certificate (2016)<br>
+            ECDL (2016)<br>
+            BLSD (2016)<br>
+            ZA swiss ski instructor (2019)
+          </p>
+        </div>
+        <div id="expertise">
+          <h4 class="sectionTitle">Expertise</h4>
+          <p class="expertise paragraph">
+            Office, MacOs, C, C++, Python, Java, HTML, CSS, Javascript, SQL, EditorX, Arduino, MIPS, x86-64, VHDL,
+            Italian, English
+          </p>
+        </div>
+
+      </section>
+      <section class="projects section">
+        <div>
+          <h4 id="projects" class="sectionTitle">Projects</h4>
+          <div class="project paragraph">
+            <div id="santorini" class="block animation-element test2 one highlight">
+              <p>
+              <h6>Santorini</h6>
+              A digital reproduction of the Santorini table game using java. Check it out on
+              <a href="https://github.com/luca98gab/ing-sw-2020-Malmusi-Lorini-Gabaglio" target="_blank">github</a>.
+              </p>
+              <img src="resources/images/GameIcon.png">
+              <img src="resources/images/Schermata 2020-06-03 alle 21.28.51.png">
+              <img src="resources/images/Schermata 2020-06-03 alle 21.32.45.png">
+            </div>
+          </div>
+          <div class="project paragraph">
+            <div id="negroni" class="block animation-element test2 one highlight">
+              <p>
+              <h6>Negroni Burger</h6>
+              Presentation Website for a local restaurant. Designed and developed from scratch.
+              </p>
+              <img class="shadow" src="resources/images/negroni.png">
+              <img class="shadow" src="resources/images/negroni-code.png">
+            </div>
+            <div id="alhon" class="block animation-element test2 one highlight">
+              <p>
+              <h6>Alhon</h6>
+              Responsive product presentation website. Designed and developed from scratch.
+              </p>
+              <img class="big" src="resources/images/alhon.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts section">
+        <h4 class="sectionTitle">Contacts</h4>
+        <div id="contacts">
+          <p class="contact paragraph">
+            <a href="https://www.google.it/maps/place/Via+Tre+Ponti,+7,+22036+Erba+CO/@45.8023474,9.2171223,17z/data=!3m1!4b1!4m5!3m4!1s0x4786a0343823fe1b:0xea9c9cd4b4df8bbd!8m2!3d45.8023474!4d9.219311"
+              target="_blank" class="fa icons black fa-location-arrow"></a><a
+              href="https://www.google.it/maps/place/Via+Tre+Ponti,+7,+22036+Erba+CO/@45.8023474,9.2171223,17z/data=!3m1!4b1!4m5!3m4!1s0x4786a0343823fe1b:0xea9c9cd4b4df8bbd!8m2!3d45.8023474!4d9.219311"
+              target="_blank" class="black">Via tre ponti 7, 22036 Erba (CO), Italy</a><br>
+            <a href="tel:3407801820" class="fa icons black fa-phone"></a><a href="tel:3407801820" class="black">+39
+              3407801820</a><br>
+            <a href="mailto:l.giorgio.99@gmail.com" target="_blank" class="fa icons black fa-envelope"></a><a
+              href="mailto:l.giorgio.99@gmail.com" target="_blank" class="black">l.giorgio.99@gmail.com</a><br>
+            <a href="https://www.giorgiolorini.it" target="_blank" class="fa icons black fa-safari"></a><a
+              href="https://www.giorgiolorini.it" target="_blank" class="black">www.giorgiolorini.it</a><br>
+            <a href="https://github.com/giorgiolorini" target="_blank" class="fa icons black fa-github"></a><a
+              href="https://github.com/giorgiolorini" target="_blank" class="black">GitHub</a><br>
+            <a href="https://www.linkedin.com/in/lorini-giorgio/" target="_blank"
+              class="fa icons black fa-linkedin"></a><a href="https://www.linkedin.com/in/lorini-giorgio/" class="black"
+              target="_blank">Linkedin</a><br>
+            <a href="https://www.instagram.com/giorgiolorini_/" target="_blank"
+              class="fa icons black fa-instagram"></a><a href="https://www.instagram.com/giorgiolorini_/"
+              target="_blank" class="black">Instagram</a><br>
+            <a href="https://www.facebook.com/giorgio.lorini.35/" target="_blank"
+              class="fa icons black fa-facebook"></a><a class="black" href="https://www.facebook.com/giorgio.lorini.35/"
+              target="_blank">Facebook</a><br>
+          </p>
+        </div>
+      </section>
+      <section class="footer section">
+        <p>© Lorini Giorgio - 2021 - All rights reserved</p>
+        <p>Photos by AS - Alberto Sangiorgio<a href="https://www.instagram.com/alberelloph/" target="_blank"
+            class="fa icons black fa-instagram blue-hover"></a></p>
+      </section>
+    </section>
+
+  </div>
+  <script src="sidebar.js?2"></script>
+  <script src="overlappingColor.js?2"></script>
+  <script src="animateLines.js?2"></script>
+  <script type="text/javascript">
+    function getAge(dateString) {
+      var today = new Date();
+      var birthDate = new Date(dateString);
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      return age;
+    }
+    document.getElementById('age').innerHTML = getAge("1999/01/22");
+  </script>
+  <script>
+    document.getElementById('hamburger').addEventListener("click", function () {
+      var menu = document.getElementById('menu');
+      if (menu.style.display == "block") {
+        menu.style.display = "none";
+        document.getElementById('topnav').style.background = getComputedStyle(document.documentElement).getPropertyValue('--sidebar-background-color');
+        document.getElementById('topbarName').style.display = "block";
+      } else {
+        menu.style.display = "block"
+        document.getElementById('topnav').style.background = "none";
+        document.getElementById('topbarName').style.display = "none";
+      }
+    });
+  </script>
+  <script src="darkMode.js?2"></script>
 </body>
 
 </html>

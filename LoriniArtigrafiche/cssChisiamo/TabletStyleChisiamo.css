@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@font-face {font-family: "BauhausStd-Medium"; src: url(../Resources/BauhausStd-Medium.otf);}
+@font-face {font-family: "source-sans-pro"; src: url(../Resources/Source_Sans_Pro/SourceSansPro-Light.ttf);}
+
+@media (min-width : 610px ) and ( max-width : 1077px ){
+
+/* Body */
+body {
+	font-family: source-sans-pro;
+	background-color: #f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+#mappa {
+	width:40%;
+	height:550px;
+	margin-top:30px;
+	margin-left: 5%;
+	float: left;
+}
+
+.contenuto {
+	width: fill;
+	height: 850px;
+	padding-top: 10px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+	
+.principale {
+	width: fill;
+	height: auto;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 40px;
+	
+}
+.principale .titolo {
+	font-size: 60px;
+	margin-bottom: 5px;
+	border-bottom-color: rgb(192, 47, 57);
+	border-bottom-style: solid;
+}
+.principale .sottotitolo {
+	font-size: 20px;
+	margin-top: 0px;
+}
+.recapiti {
+	float: right;
+	width: 45%;
+	height: 550px;
+	background-color: rgba(242,242,242,1.00);
+	margin-top: 30px;
+	margin-right: 5%;
+	
+}
+.mail {
+	width: 100%;
+	height: auto;
+	margin-left: 10%;
+
+}
+.mail p {
+	font-size: 21px;
+	margin-left: 15%;
+}
+.titoletto{
+	font-size: 25px;
+	margin-left: 0;
+	padding-left: 0;
+}
+.titolorecapiti{
+	color:  rgb(192, 47, 57);
+	font-size: 50px;
+	font-weight: 500;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	border-bottom-style: solid;
+    border-bottom: 2px dashed black;
+	margin-top: 5px;
+	padding-left: 2.5%;
+	
+}
+	
+
+/* Container */
+.container {
+	width: 100%;
+	height: 900px;
+	background-color: #FFFFFF;
+}
+/* Navigation */
+header {
+	width: 100%;
+	height: 40px;
+	background-color: #737171;
+	border-bottom: 1px solid #414141;
+	position:fixed;
+	z-index: +1;
+}
+
+.logoimg {
+	float: left;
+	margin-top: 4.5px;
+	margin-left: 4.5px;
+	border: 1px solid #414141;
+}
+
+a{
+	text-decoration: inherit;
+	color: inherit;
+}
+
+.logo {
+	color: #fff;
+	font-weight: bold;
+	width: auto;
+	float: left;
+	margin-top: 12.5px;
+	margin-left: 10px;
+	letter-spacing: 1.5px;
+	font-family: "BauhausStd-Medium";
+	font-size: 18px;
+}
+nav {
+	float: right;
+	width: 62%;
+	text-align: right;
+	margin-right: 5px;
+	height: 40px;
+	}
+header nav ul {
+	list-style: none;
+	float: right;
+	margin-top: 13px;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: left;
+	margin-right: 8px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+	
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	
+}
+ul li:hover a {
+	color: rgb(192, 47, 57);
+}
+
+footer {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+.footer_column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+}
+footer h1 {
+	color: #717070;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+}
+footer .footer_column p {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 5px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: lighter;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #717070;
+	background-color: #FFFFFF;
+}
+.button {
+	width: auto;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+	font-family: "BauhausStd-Medium";
+	font-size: 40px;
+}
+.button:hover {
+	color: rgb(192, 47, 57);
+	cursor: pointer;
+}
+.copyright {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background-color: #717070;
+	color: #FFFFFF;
+	font-weight: normal;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+.footer_banner {
+	background-color: #B3B3B3;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+footer {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+	#fondo3{
+	display: none;
+}
+}

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "secure"
+AuthUserFile /web/htdocs/www.giorgiolorini.it/home/fakemail/secure/.htpasswd
+require valid-user

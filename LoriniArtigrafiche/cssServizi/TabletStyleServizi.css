@@ -1,0 +1,426 @@
+@charset "UTF-8";
+@font-face {font-family: "BauhausStd-Medium"; src: url(../Resources/BauhausStd-Medium.otf);}
+@font-face {font-family: "source-sans-pro"; src: url(../Resources/Source_Sans_Pro/SourceSansPro-Light.ttf);}
+
+@media (min-width : 610px ) and ( max-width : 1077px ){
+
+	body {
+	font-family: source-sans-pro;
+	background-color: #f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+	
+.contenuto {
+	width: fill;
+	height: 4450px;
+	padding-top: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+	
+.principale {
+	height: 100px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 30px;
+	margin-bottom: 170px;
+	
+	margin-top: 30px;
+}
+.voci {
+	list-style: none;
+	margin-top: 5px;
+	width: auto;
+	margin-left: 0px;
+	padding-left: 0px;
+	display: none;
+}
+.voci li{
+	float: left;
+	margin-right: 5px;
+
+	font-size: 20px;
+}
+li:hover {
+	cursor: pointer;
+}
+
+.titolo {
+	float: left;
+	width: 98%;
+	font-size: 60px;
+	margin-bottom: 10px;
+	border-bottom-color: rgb(192, 47, 57);
+	border-bottom-style: solid;
+	margin-top: 0;
+	padding-left: 2%;
+	
+}
+.sottotitolo {
+	padding-top: 80px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	font-size: 20px;
+	padding-bottom: 15px;
+	margin-top: -30px;
+}
+.dx {
+	background-color: rgba(172,172,172,0.25);
+	width: 90%;
+	margin-left: 5%;
+	height: 500px;
+	margin-bottom: 50px;
+}
+
+.dx h2 {
+	margin-right: 5%;
+	padding-top: 30px;
+	width: auto;
+	text-align: right;
+	font-size: 50px;
+}
+.dx p {
+	text-align: right;
+	margin-top: 5%;
+	margin-right: 2.5%;
+	float: right;
+	font-size: 28px;
+	width: 50%;
+}
+.dx img {
+	float: left;
+	margin-left: 2.5%;
+	position: absolute;
+	width: 50%;
+}
+.dx ul {
+	text-align: justify;
+	margin-top: 15px;
+	margin-left: 5%;
+	margin-right: 2.5%;
+	float: left;
+	font-size: 24px;
+	width: inherit;
+	list-style: none;
+}
+.dx li {
+	margin-left: 7%;
+	float: left;
+	
+}
+.sx {
+	background-color: rgba(172,172,172,0.25);
+	width: 90%;
+	margin-left: 5%;
+	height: 500px;
+	margin-bottom: 50px;
+}
+.sx h2 {
+	margin-left: 5%;
+	padding-top: 30px;
+	width: auto;
+	text-align: left;
+	font-size: 50px;
+}
+.sx p {
+	text-align: left;
+	margin-top: 0;
+	margin-left: 2.5%;
+	float: left;
+	font-size: 25px;
+	width: 30%;
+}
+.sx img {
+	float: right;
+	margin-right: 2.5%;
+	margin-top: 0;
+	padding-top: 0;
+	position: absolute;
+	width: 50%;
+}
+.sx ul {
+	text-align: justify;
+	margin-top: 15px;
+	padding-left: 5%;
+	padding-right: 5%;
+	float: left;
+	font-size: 24px;
+	width: inherit;
+	list-style: none;
+}
+.sx li {
+	margin-left: 5.5%;
+	float: left;
+	
+}
+.tasti {
+	margin-top: 300px;
+	margin-left: 50px;
+	background-color: antiquewhite;
+	height: 50px;
+}
+.tasti p {
+	font-size: 20px;
+	width: auto;
+	margin-top: 0;
+	border-bottom-color: rgb(115, 113, 113);
+	border-bottom-style: solid;
+	color: rgb(115, 113, 113);
+}
+.tasti p:hover {
+	font-size: 20px;
+	width: auto;
+	margin-top: 0;
+	border-bottom-color: rgb(192, 47, 57);
+	border-bottom-style: solid;
+	color: rgb(192, 47, 57);
+}
+#primo {
+	background-color: rgba(192, 47, 57, 0.9);
+	margin-top: 210px;
+	z-index: -2;
+}
+#primo h2{
+	color: black;
+	
+}
+#imgprodotti{
+	position: absolute;
+	z-index: 0;
+	width: 50%;
+}
+#prodotti{
+	float: right;
+	width: 25%;
+	margin-top: 30px;
+}
+#prodotti li{
+	float: right;
+	text-align: right;
+	font-size: 20px;
+	color: white;
+	width: 250px;
+	margin-top: 20px;
+}
+#progettazione{
+	background-image: url(../Resources/IMG_0037.JPG);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: color-dodge;
+}
+#progettazionetxt {
+	margin-top: 20px;
+	font-size: 22px;
+	text-shadow:  1px 1px 10px white, -1px -1px 10px white, 1px 1px 10px white, -1px -1px 10px white, 1px 1px 10px white,  1px 1px 10px white, 1px 1px 10px white;
+}
+#imgprogettazione {
+	display: none;
+}
+#impaginazione {
+	
+}
+#prestampa {
+	font-size: 18px;
+	margin-top: 0px;
+}
+#stampa {
+	font-size: 18px;
+	margin-top: 2%;
+	width: 47%;
+}
+#imgstampa{
+	width: 300px;
+}
+#legatoria {
+	font-size: 26px;
+	margin-top: 4%;
+}
+#imglegatoria {
+	margin-top: -20px;
+	width: 80%;
+}
+#imgfinitura {
+	margin-top: -20px;
+	width: 80%;
+}
+#allestimentotitolo {
+	font-size: 35px;
+	text-align: left;
+	margin-left: 5%;
+}
+#finale p{
+	text-align: left;
+	width: auto;
+	float: none;
+	margin-left: 5%;
+	margin-top: -30px;
+	font-size: 25px;
+}
+#finale {
+	height: 200px;
+}
+#attuale
+{
+	border-bottom-color: rgb(192, 47, 57);
+	border-bottom-style: ridge;
+	padding-bottom: 7px
+}
+/* Container */
+.container {
+	width: 100%;
+	height: 4550px;
+	background-color: #FFFFFF;
+}
+/* Navigation */
+header {
+	width: 100%;
+	height: 40px;
+	background-color: #737171;
+	border-bottom: 1px solid #414141;
+	position:fixed;
+	z-index: +1;
+}
+
+.logoimg {
+	float: left;
+	margin-top: 4.5px;
+	margin-left: 4.5px;
+	border: 1px solid #414141;
+}
+
+a{
+	text-decoration: inherit;
+	color: inherit;
+}
+
+.logo {
+	color: #fff;
+	font-weight: bold;
+	width: auto;
+	float: left;
+	margin-top: 12.5px;
+	margin-left: 10px;
+	letter-spacing: 1.5px;
+	font-family: "BauhausStd-Medium";
+	font-size: 18px;
+}
+nav {
+	float: right;
+	width: 62%;
+	text-align: right;
+	margin-right: 5px;
+	height: 40px;
+	}
+header nav ul {
+	list-style: none;
+	float: right;
+	margin-top: 13px;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: left;
+	margin-right: 8px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+	
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	
+}
+ul li:hover a {
+	color: rgb(192, 47, 57);
+}
+
+footer {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+.footer_column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+}
+footer h1 {
+	color: #717070;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+}
+footer .footer_column p {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 5px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: lighter;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #717070;
+	background-color: #FFFFFF;
+}
+.button {
+	width: auto;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+	font-family: "BauhausStd-Medium";
+	font-size: 40px;
+}
+.button:hover {
+	color: rgb(192, 47, 57);
+	cursor: pointer;
+}
+.copyright {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background-color: #717070;
+	color: #FFFFFF;
+	font-weight: normal;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+.footer_banner {
+	background-color: #B3B3B3;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+footer {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+#imgprodotti {
+	
+}
+	#fondo3{
+	display: none;
+}
+}

@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@font-face {font-family: "BauhausStd-Medium"; src: url(../Resources/BauhausStd-Medium.otf);}
+@font-face {font-family: "source-sans-pro"; src: url(../Resources/Source_Sans_Pro/SourceSansPro-Light.ttf);}
+
+@media (min-width : 1078px ){
+
+/* Body */
+html{
+	height: 100%;
+}
+body {
+	font-family: source-sans-pro;
+	background-color: #f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+	height:100%;
+	
+}
+#mappa {
+	width:40%;
+	height:300px;
+	float:right;
+	margin-top:50px;
+	margin-right:10%;
+}
+
+.contenuto {
+	width: fill;
+	height: auto;
+	padding-top: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	
+}
+	
+.principale {
+	width: 32%;
+	height: auto;
+	margin-left: 10%;
+	float: left;
+	margin-top: 40px;
+	
+}
+.principale .titolo {
+	font-size: 60px;
+	margin-bottom: 5px;
+	border-bottom-color: rgb(192, 47, 57);
+	border-bottom-style: solid;
+}
+.principale .sottotitolo {
+	font-size: 20px;
+	margin-top: 0px;
+}
+.recapiti {
+	width: 80%;
+	height: 300px;
+	background-color: rgba(242,242,242,1.00);
+	margin-top: 450px;
+	margin-left: 10%;
+}
+.mail {
+	width: 25%;
+	height: 200px;
+	margin-left: 6%;
+	float: left;
+}
+.mail p {
+	font-size: 21px;
+	margin-left: 10%;
+}
+.titoletto{
+	width: auto;
+}
+.titolorecapiti{
+	color:  rgb(192, 47, 57);
+	font-size: 50px;
+	font-weight: 500;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	border-bottom-style: solid;
+    border-bottom: 2px dashed black;
+	
+}
+#attuale
+{
+	border-bottom-color: rgb(192, 47, 57);
+	border-bottom-style: ridge;
+	padding-bottom: 9px
+}
+/* Container */
+.container {
+	width: 100%;
+    height: 100%;
+	background-color: #FFFFFF;
+	
+}
+/* Navigation */
+header {
+	width: 100%;
+	height: 45px;
+	background-color: #737171;
+	border-bottom: 1px solid #414141;
+	position:fixed;
+	z-index: +1;
+}
+
+.logoimg {
+	float: left;
+	margin-top: 8px;
+	margin-left: 8px;
+	border: 1px solid #414141;
+}
+
+a{
+	text-decoration: inherit;
+	color: inherit;
+}
+
+.logo {
+	color: #fff;
+	font-weight: bold;
+	text-align: undefined;
+	width: auto;
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+	letter-spacing: 2px;
+	font-family: "BauhausStd-Medium";
+	font-size: 20px;
+}
+nav {
+	float: right;
+	width: 70%;
+	text-align: right;
+	margin-right: 25px;
+}
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: left;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: rgb(192, 47, 57);
+}
+
+/* More info */
+footer {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+
+.copyright {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background-color: #717070;
+	color: #FFFFFF;
+	font-weight: normal;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+	margin-top: -37px;
+	height: 20px;
+}
+
+footer {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+	#fondo1 {
+	float: left;
+}
+#fondo2 {
+	margin-left: 28%;
+	margin-right: 28%;
+	
+}
+#fondo3 {
+	float: right;
+	padding-right: 5px;
+}
+}

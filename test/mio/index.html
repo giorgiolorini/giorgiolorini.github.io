@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="it-IT">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114276984-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-114276984-1', { 'anonymize_ip': true });
+	gtag('config', 'UA-114276984-1');
+	</script>
+
+	<meta name="google-site-verification" content="P6T-YOaUgB_dz8VK4BruLr9HupXkvi9Tkj59Xfau9uQ" />
+	<meta name="description" content="Giorgio Lorini, Erba (CO), Italy. Computer Engineering student at Politecnico di Milano. Web developer and designer. Passionate about technology, sports and nature.">
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Giorgio Lorini</title>
+	<link href="FdStile.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Lato" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2771ff">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#5d77ff">
+</head>
+
+<body>
+	<div id="sfondo">
+		<div id="footerdx">Photo by AS - Alberto Sangiorgio</div>
+		<div id="footersx">© Lorini Giorgio - 2018 - All rights reserved</div>
+	</div>
+
+	<main>
+ 		
+ 		<div id="topmenu"><a href="/cookie-policy.html" style="color: white">cookie policy</a><a href="http://www.giorgiolorini.it/test/index.html" style="text-decoration: none; color:white"><br>Enter testing area</a></div>
+ 		
+  		<div id="content">
+  		
+		
+
+			<div id="subcontent">
+
+				<img id="logo" src="Logo/FirmaGiorgioLoriniInvertito2.png" width="200" height="200" alt=""/>
+
+
+				<div id="testo">
+					<script>
+						var aText = new Array(
+						"<strong> Giorgio Lorini</strong><br>Erba (CO), Italy_ <br>Computer Engineering <strong>student</strong> at Politecnico di Milano_ <br><strong>Web developer</strong> and designer_ <br>Passionate about technology, sports and nature");
+						var iSpeed = 5; // time delay of print out
+						var iIndex = 0; // start printing array at this posision
+						var iArrLength = aText[0].length; // the length of the text array
+						var iScrollAt = 20; // start scrolling up at this many lines
+
+						var iTextPos = 0; // initialise text position
+						var sContents = ''; // initialise contents variable
+						var iRow; // initialise current row
+
+						function typewriter()
+						{
+						 sContents =  ' ';
+						 iRow = Math.max(0, iIndex-iScrollAt);
+						 var destination = document.getElementById("testo");
+
+						 while ( iRow < iIndex ) {
+						  sContents += aText[iRow++] + '<br />';
+						 }
+						 destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+						 if ( iTextPos++ == iArrLength ) {
+						  iTextPos = 0;
+						  iIndex++;
+						  if ( iIndex != aText.length ) {
+						   iArrLength = aText[iIndex].length;
+						   setTimeout("typewriter()", 10);
+						  }
+						 } else {
+						  setTimeout("typewriter()", iSpeed);
+						 }
+						}
+
+						typewriter();
+
+			  		</script>
+				</div>
+
+				<div id="tasti">
+					<script>
+						function moveUp() {
+							if(document.getElementById("works").style.display=='block'){
+								document.getElementById("works").style.display='none';
+								document.getElementById("contactform").style.display='block';
+								document.getElementById("contactform").style.opacity=0.8;
+								document.getElementById('tastolavori').innerHTML='MY WORKS';
+								document.getElementById("testo").innerHTML='20 y/o student from Italy -<br>Computer engineering at POLIMI -<br>Web developer and Designer -<br><br>Contact me for more info:';
+							} else{
+								if(document.getElementById("contactform").style.opacity!=0){
+									document.getElementById("testo").innerHTML='<strong> Giorgio Lorini</strong> - 20 y/o -<br>Erba (CO), Italy - <br>Computer Engineering <strong>student</strong> at Politecnico di Milano - <br><strong>Web developer</strong> and designer - <br>Passionate about technology, sports and nature. ';
+									document.getElementById("contactform").style.display='none';
+									document.getElementById('tastocontatti').innerHTML='CONTACT ME';
+									document.getElementById("contactform").style.opacity=0;
+									var elem = document.getElementById("content");
+									var pos = -250;
+									var id = setInterval(frame, 1);
+									var elem2 = document.getElementById("contactform");   
+									var op = 0.8;
+									function frame() {
+										if (pos >= -150) {
+											clearInterval(id);
+										} else {
+											pos++;
+											pos++;
+											elem.style.marginTop = pos + 'px';
+										}
+									}
+								}
+								else{
+									document.getElementById("testo").innerHTML='20 y/o student from Italy -<br>Computer engineering at POLIMI -<br>Web developer and Designer -<br><br>Contact me for more info:';
+
+									var elem = document.getElementById("content");
+									var elem2 = document.getElementById("contactform");   
+									var pos = -150;
+									var op = 0;
+									var id = setInterval(frame, 1);
+									function frame() {
+										if (pos <= -250) {
+											clearInterval(id);
+										} else {
+											pos--;
+											pos--;
+											elem.style.marginTop = pos + 'px';
+											if ( op<0.8) {
+												op=op+0.025; 
+												elem2.style.opacity = op;	
+											}
+										}
+									}
+								}
+							
+							}
+						}
+					</script>
+					
+					
+					<button id="tastocontatti" onClick="getElementById('contactform').style.display='block'; getElementById('tastolavori').innerHTML='MY WORKS'; getElementById('tastocontatti').innerHTML='CLOSE'; moveUp()">CONTACT ME</button>
+					<img class="social" src="glyph-logo_May2016.png" onclick="window.open('https://www.instagram.com/giorgiolorini_/', '_blank')" />
+					<img class="social" id="socialfb" src="FB-f-Logo__white_1024.png" onclick="window.open('https://www.facebook.com/giorgio.lorini.7', '_blank')" />
+					
+				  	<script>
+						function moveUp2() {
+							if(document.getElementById("contactform").style.display=='block'){
+								document.getElementById("contactform").style.display='none';
+								document.getElementById("works").style.display='block';
+								document.getElementById('tastocontatti').innerHTML='CONTACT ME';
+								document.getElementById("testo").innerHTML='I started developing websites in 2017. Since then I continuosly learn new ways to improve and make webpages look great.<br>See below examples of what I am able to do.';
+							} else{
+							if(document.getElementById("works").style.display=='block'){
+								document.getElementById("works").style.display='none';
+								document.getElementById('tastolavori').innerHTML='MY WORKS';
+								document.getElementById("testo").innerHTML='<strong> Giorgio Lorini</strong> - 20 y/o -<br>Erba (CO), Italy - <br>Computer Engineering <strong>student</strong> at Politecnico di Milano - <br><strong>Web developer</strong> and designer - <br>Passionate about technology, sports and nature. ';
+								var elem = document.getElementById("content");
+								var pos = -250;
+								var id = setInterval(frame, 1);
+								var elem2 = document.getElementById("works");
+								var op = 0.8;
+								function frame() {
+									if (pos >= -150) {
+										clearInterval(id);
+									} else {
+										pos++;
+										pos++;
+										elem.style.marginTop = pos + 'px';
+									}
+								}
+							}
+							else{
+								document.getElementById('works').style.display='block';
+								
+								document.getElementById("testo").innerHTML='I started developing websites in 2017. Since then I continuosly learn new ways to improve and make webpages look great.<br>See below examples of what I am able to do.';
+
+								var elem = document.getElementById("content");  
+								var pos = -150;
+								var op = 0;
+								var id = setInterval(frame, 1);
+							  	function frame() {
+									if (pos <= -250) {
+										clearInterval(id);
+									} else {
+										pos--;
+										pos--;
+										elem.style.marginTop = pos + 'px';
+										
+									}
+								}
+							}
+						}
+						}
+					</script>
+					
+				  <button id="tastolavori" onClick="getElementById('tastolavori').innerHTML='CLOSE'; moveUp2()">MY WORKS</button>
+
+				</div>
+				<div id="works">
+				  <p>MY WORKS</p>
+				  <p class="mobile" id="mobilework">
+				  	I started developing websites in 2017. Since then I continuosly learn new ways to improve and make webpages look great.<br>See below examples of what I am able to do.
+					</p>
+				  <div class="work" style="background-image: url(SitoGhisla.jpg)" onClick="window.open('http://www.claudioghislanzoni.it', '_blank')"><img src="LogoGhisla.png"/></div>
+					<div class="work" style="background-image: url(SitoLorini.jpg)" onClick="window.open('http://www.lorini.com', '_blank')"><img id="LA" src="LogoLA.png"/></div>
+					<div class="work" style="background-image: url(SitoNegroni.jpg)"><img src="LogoNegroni3.jpg"/></div>
+				</div>
+				<div id="contactform">
+				<h3 class="mobile" id="mobilecontacttitle">CONTACT ME</h3>
+				<p class="mobile" id="mobilecontact">20 y/o student from Italy -<br>Computer engineering at POLIMI -<br>Web developer and Designer -<br><br>Contact me for more info:</p>
+				
+				  <form name="htmlform" method="post" target="_blank" action="html_form_send.php">
+					<table>
+
+					<tr>
+					 <td valign="top">
+					  <input  type="text" name="first_name" maxlength="50" size="30" placeholder="Name">
+					 </td>
+					</tr>
+
+					<tr>
+					 <td valign="top">
+					  <input  type="text" name="email" maxlength="80" size="30" placeholder="Email">
+					 </td>
+					</tr>
+
+					<tr>
+					 <td valign="top">
+					  <textarea  name="comments" maxlength="4000" cols="25" rows="6" placeholder="Your message..."></textarea>
+					 </td>
+					</tr>
+
+					<tr>
+					 <td style="text-align:center">
+					  <input type="submit" value="Send">
+					 </td>
+					</tr>
+					</table>
+					</form>
+
+				</div>
+				<footer>
+    				© Lorini Giorgio - 2018 - All rights reserved 
+    			</footer>
+			</div>
+  		</div>
+  		
+  		
+   		
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="it-IT">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Giorgio Lorini</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Lato" rel="stylesheet">
+
+
+</head>
+
+<style>
+	
+html{
+	font-family:  'Montserrat', sans-serif;
+}
+
+
+h2{
+	display: block;
+	color: #526578;
+	width: 100%;
+}
+h3{
+	margin-bottom: 0;
+	width: 100%;
+}
+p{
+	margin-top: 0;
+}
+	
+@media (min-width : 800px ){
+	
+	table{
+		margin: 5% auto;
+		width: 50%;
+	}
+	input[type=text]{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 0 0 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	input[type=submit] {
+		width: 100%;
+		background-color: #004B85;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: background-color 0.4s;
+		font-size: 18px;
+	}
+	input[type=submit]:hover {
+		background-color: #0065B3;
+	}
+	textarea{
+		width: 100%;
+		padding: 12px 20px 0;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		resize: vertical;
+		max-height: 1000px;
+		min-height: 50px;
+		height: 150px;
+	}
+}
+	
+	
+@media (max-width : 799px ){
+	
+	table{
+		margin: 5% auto;
+		width: 90%;
+	}
+	input[type=text]{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 0 0 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	input[type=submit] {
+		width: 100%;
+		background-color: #004B85;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: background-color 0.4s;
+		font-size: 18px;
+	}
+	input[type=submit]:hover {
+		background-color: #0065B3;
+	}
+	textarea{
+		width: 100%;
+		padding: 12px 20px 0;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		resize: vertical;
+		max-height: 1000px;
+		min-height: 50px;
+		height: 300px;
+	}
+}
+</style>
+
+<body>
+
+
+	<main>
+	
+
+
+
+<form name="htmlform" method="post" target="_blank" action="html_form_send.php" accept-charset="UTF-8">
+				
+	
+					<table>
+					<tr>
+						<td valign="top">
+						<h2>Fake Email Sender</h2>
+						</td>
+					</tr>
+
+					<tr>
+					 <td valign="top">
+					  <input  type="text" name="email_to" maxlength="50" size="30" placeholder="To (email@xyz.com)">
+					 </td>
+					</tr>
+
+					<tr>
+					 <td valign="top">
+					  <input  type="text" name="email" maxlength="80" size="30" placeholder="From - FakeSender email (email@xyz.com)">
+					 </td>
+					</tr>
+
+					<tr>
+					 <td valign="top">
+					  <input  type="text" name="object" maxlength="50" size="30" placeholder="Object">
+					 </td>
+					</tr>
+
+					
+					<tr>
+					 <td valign="top">
+					  <textarea  name="comments" maxlength="5000" cols="25" rows="6" placeholder="Your message..."></textarea>
+					 </td>
+					</tr>
+					
+					<tr>
+						<td valign="top">
+						<h3>Disclaimer</h3>
+						<p>By clicking "Send" you accept the following terms.<br> A copy of your Fake Email and your ip Address will be stored for security reasons.<br>Use at your own risk. I will assume no responsability for any misuse.</p>
+						</td>
+					</tr>
+				
+					<tr>
+					 <td style="text-align:center">
+					  <input type="submit" value="Send">
+					 </td>
+					</tr>
+					</table>
+					</form>
+
+
+  		
+  		
+   		
+    </main>
+
+
+</body>
+
+</html>

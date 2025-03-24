@@ -1,0 +1,145 @@
+Registro fakemail:
+
+
+
+
+
+
+
+
+
+
+
+
+
+22/03/2018   11:52:01pm
+Email to: l.giorgio.99@gmail.com
+Email from: l.giorgio.99@gmail.com
+Object: prova oggetto 5
+Text: 
+prova testo 5
+FINE MESSAGGIO
+
+Sender ip: 87.12.145.119
+
+
+
+22/03/2018   11:53:32pm
+Email to: l.giorgio.99@gmail.com
+Email from: l.giorgio.99@gmail.com
+Object: prova oggetto 5
+Text: 
+prova testo 5
+FINE MESSAGGIO
+
+Sender ip: 87.12.145.119
+
+
+
+02/06/2019   08:53:23pm
+Email to: lorinipeppo@gmail.com
+Email from: Lorini@lorini.com
+Object: Ciao
+Text: 
+Ciao
+
+
+FINE MESSAGGIO
+
+Sender ip: 93.54.127.84
+
+
+
+21/07/2019   11:34:54pm
+Email to: luca8.panzeri@mail.polimi.it
+Email from: andrea.castoldi@polimi.it
+Object: Annullamento esame 4/07
+Text: 
+ANNULLAMENTO APPELLO FdE 4 LUGLIO 2019
+
+==============================
+
+
+
+A causa di impedimenti burocratici l'appello del 4/07 di fondamenti di elettronica è stato ANNULLATO. Si chiede a TUTTI gli studenti di ripetere la prova.
+
+Per questo domani 22/07 verranno accettati tutti gli studenti che si presentino.
+
+
+
+Cordiali saluti
+
+
+
+Andrea Castoldi
+FINE MESSAGGIO
+
+Sender ip: 5.90.53.75
+
+
+
+22/07/2019   08:18:44am
+Email to: luca.donizzetti@mail.polimi.it
+Email from: andrea.castoldi@polimi.it
+Object: Annullamento esame 4/07
+Text: 
+ANNULLAMENTO APPELLO FdE 4 LUGLIO 2019
+
+==============================
+
+
+
+A causa di impedimenti burocratici l'appello del 4/07 di fondamenti di elettronica è stato ANNULLATO. Si chiede a TUTTI gli studenti di ripetere la prova.
+
+Per questo domani 22/07 verranno accettati tutti gli studenti che si presentino.
+
+
+
+Cordiali saluti
+
+
+
+Andrea Castoldi
+FINE MESSAGGIO
+
+Sender ip: 5.90.48.77
+
+
+
+02/11/2021   03:33:57pm
+Email to: paolo.cordolcini@mail.polimi.it
+Email from: ferruccio.resta@polimi.it
+Object: Laurea ad Honorem
+Text: 
+Egregio Paolo,
+sulla base del suo percorso accademico il rettorato ha deciso di conferirLe la laurea ad honorem in architettura
+FINE MESSAGGIO
+
+Sender ip: 131.175.147.2
+
+
+
+02/11/2021   03:37:40pm
+Email to: luca.gabaglio@mail.polimi.it
+Email from: steff.zenny@mailoneone.it
+Object: IMPORTANTE
+Text: 
+Sei un cretinazzo
+FINE MESSAGGIO
+
+Sender ip: 131.175.147.2
+
+
+
+02/11/2021   03:38:47pm
+Email to: chiara.martina@mail.polimi.it
+Email from: giampiero.bindolino@mail.polimi.it
+Object: IMPORTANTE
+Text: 
+Tanti basssssini Mua <3
+FINE MESSAGGIO
+
+Sender ip: 131.175.147.2
+
+
+

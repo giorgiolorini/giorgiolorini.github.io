@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Speciale CSV Toolbox</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon-32x32.png">
+</head>
+
+
+<body>
+  <h3>Inserisci il csv esportato da reservo per contare ore e giorni di lavoro</h3>
+  <img src="tutorial.gif" width="300px">
+  <br />
+  <br />
+    <form id="myForm">
+      <input type="file" id="csvFile" accept=".csv" style="width: 100%;"/>
+      <br />
+      <br />
+      <input type="submit" value="Conferma" />
+    </form>
+</body>
+
+
+<script>
+const myForm = document.getElementById("myForm");
+const csvFile = document.getElementById("csvFile");
+
+myForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("Form submitted");
+    const input = csvFile.files[0];
+    const reader = new FileReader();
+
+      reader.onload = function (e) {
+        const text = e.target.result;
+        var data = csvToArray(text);
+        data = filterData(data);
+        console.log(data);
+        //document.write(JSON.stringify(data));
+        var ore = getHoursOfWork(data)/2;
+        var giorni =  getDaysOfWork(data);
+        document.write("Giorni di lavoro: ", giorni, "<br>");
+        document.write("Ore totali lavorate: ", ore, "<br>");
+        document.write("Media oraria: ", parseFloat(ore/giorni).toFixed(2), " ore al giorno<br>");
+      };
+
+      reader.readAsText(input);
+});
+
+function filterData(data){
+    const newData = data.map(({Maestro, Data, Inizio, Fine, Disp, Corso}) => ({Data, Inizio, Fine, Corso}))
+    for (var i = newData.length - 1; i >= 0; --i) {
+      if (newData[i].Corso == "") {
+        newData.splice(i,1);
+      }
+    }
+    return newData;
+}
+
+function getDaysOfWork(data){
+  let uniqueDays = [...new Set(data.map(item => item.Data))];
+  return uniqueDays.length
+}
+function getHoursOfWork(data){
+  return data.length
+}
+
+function csvToArray(str, delimiter = ";") {
+  str = str.replace(/"/g, "");
+  str = str.replaceAll(".;", ".,");
+  str = str.replaceAll("Ora fine", "Fine");
+  str = str.replaceAll("Ora inizio", "Inizio");
+  str = str.replaceAll("Tipo disponibilita", "Disp");
+  str = str.replaceAll("Assegnato al gruppo/corso", "Corso");
+  console.log(str);
+  // slice from start of text to the first \n index
+  // use split to create an array from string by delimiter
+  const headers = str.slice(0, str.indexOf("\r\n")).split(delimiter);
+  console.log(headers);
+
+  // slice from \n index + 1 to the end of the text
+  // use split to create an array of each csv value row
+  const rows = str.slice(str.indexOf("\r\n") + 1).split("\r\n");
+  console.log(rows);
+
+  // Map the rows
+  // split values from each row into an array
+  // use headers.reduce to create an object
+  // object properties derived from headers:values
+  // the object passed as an element of the array
+  const arr = rows.map(function (row) {
+    const values = row.split(delimiter);
+    const el = headers.reduce(function (object, header, index) {
+      object[header] = values[index];
+      return object;
+    }, {});
+    return el;
+  });
+
+  // return the array
+  return arr;
+}
+</script>
+
+</html>
