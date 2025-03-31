@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Testing"
-AuthUserFile /web/htdocs/www.giorgiolorini.it/home/test/.htpasswd
-require valid-user
